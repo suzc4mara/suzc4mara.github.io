@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luís Câmara's Portfolio</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/22be555ba4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+        <h1>
+          Luís <br />
+          Câmara
+        </h1>
+
+        <ul>
+          <li>
+            <label class="toggler">
+              <input type="checkbox" id="theme" />
+              <span class="toggler-slider"></span>
+            </label>
+          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2
+          class="h2-quote"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <q>I believe in what is simple and effective</q>
+        </h2>
+        <div id="animation"></div>
+      </section>
+      <section id="projects">
+        <h2 class="subtitle">Projects</h2>
+      </section>
+      <section id="about">
+        <h2 class="subtitle">About me</h2>
+        <!-- talvez fazer algo mais fácil e divertido de ser lido tipo colocar uma linha pra cada informação (nome, idade, país), adicionar aquele símbolo de localização ao lado de Brazil etc -->
+        <p>
+          My name is Luís Câmara, I'm 17 years old, and I'm from Brazil. I
+          started learning Front-End when I was 13. Today, I have knowledge in
+          HTML, CSS, JavaScript, PHP, Laravel, React.js, Node.js, Python, web
+          pentesting, and I want to learn a lot more. I'm passionate about
+          technology, and I love to be constantly learning something new in this
+          vast and intriguing universe.
+        </p>
+      </section>
+      <section id="contact">
+        <h2 class="subtitle">Get in touch</h2>
+        <form
+          action="https://formsubmit.co/d877695b63a59498a82f29c36479af12"
+          method="POST"
+        >
+          <div class="field">
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="field">
+            <label for="email">E-mail: </label>
+            <input
+              type="text"
+              name="email"
+              placeholder="john@doe.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              cols="30"
+              rows="5"
+              placeholder="Hello. I would like to ask if you..."
+              required
+            ></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="Contact - Portfolio" />
+          <!-- <input type="hidden" name="_next" value="./form.html" /> -->
+          <div class="field">
+            <input class="submit" type="submit" value="Send" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-col-1">
+        <h3>Useful links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </div>
+      <div class="footer-col-2">
+        <h3>Follow me</h3>
+        <ul class="footer-social-icons">
+          <li>
+            <a href="https://github.com/luisc4mara" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>

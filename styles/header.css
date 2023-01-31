@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #474a51;
+  --secondary-color: #f2e7bf;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+h1 {
+  font-weight: bold;
+  width: 56px;
+  height: 32px;
+  padding: 2px 4px;
+  border: var(--secondary-color) solid 1px;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+ul a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  transition: width 0.2s linear;
+}
+
+ul a:hover::after {
+  width: 100%;
+}
+
+.toggler {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.toggler-slider {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  border-radius: 40%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.toggler-slider::before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  bottom: 5px;
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#theme {
+  display: none;
+}
+
+#theme:checked + .toggler-slider {
+  background-color: var(--secondary-color);
+}
+#theme:checked + .toggler-slider::before {
+  transform: translateX(30px);
+  background-color: var(--primary-color);
+}

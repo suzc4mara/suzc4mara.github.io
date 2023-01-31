@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio. I'm still working on it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisc4mara/portfolio.git"
+  },
+  "author": "Luís Câmara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisc4mara/portfolio/issues"
+  },
+  "homepage": "https://github.com/luisc4mara/portfolio#readme",
+  "dependencies": {
+    "three": "^0.149.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
