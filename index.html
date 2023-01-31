@@ -18,12 +18,20 @@
   <body>
     <header>
       <nav data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
-        <h1>
-          Luís <br />
-          Câmara
-        </h1>
+        <div class="header-top">
+          <h1>
+            Luís <br />
+            Câmara
+          </h1>
 
-        <ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <ul class="nav-list">
           <li>
             <label class="toggler">
               <input type="checkbox" id="theme" />
@@ -51,18 +59,65 @@
       </section>
       <section id="projects">
         <h2 class="subtitle">Projects</h2>
+        <h3>Some projects will come soon</h3>
       </section>
       <section id="about">
         <h2 class="subtitle">About me</h2>
         <!-- talvez fazer algo mais fácil e divertido de ser lido tipo colocar uma linha pra cada informação (nome, idade, país), adicionar aquele símbolo de localização ao lado de Brazil etc -->
-        <p>
-          My name is Luís Câmara, I'm 17 years old, and I'm from Brazil. I
-          started learning Front-End when I was 13. Today, I have knowledge in
-          HTML, CSS, JavaScript, PHP, Laravel, React.js, Node.js, Python, web
-          pentesting, and I want to learn a lot more. I'm passionate about
-          technology, and I love to be constantly learning something new in this
-          vast and intriguing universe.
-        </p>
+        <article>
+          <p>
+            My name is Luís Câmara, I'm 17 years old, and I'm from Brazil.
+            Nowadays, I have knowledge in:
+          </p>
+          <ul class="about-social-icons">
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                >HTML5 <i class="fa-brands fa-html5"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                >CSS3 <i class="fa-brands fa-css3-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://reactjs.org/" target="_blank"
+                >React.js <i class="fa-brands fa-react"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                >JavaScript <i class="fa-brands fa-square-js"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://nodejs.org/en/" target="_blank"
+                >Node.js <i class="fa-brands fa-node-js"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.php.net/" target="_blank"
+                >PHP <i class="fa-brands fa-php"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linux.org/" target="_blank"
+                >Linux <i class="fa-brands fa-linux"></i
+              ></a>
+            </li>
+          </ul>
+          <p>
+            And I want to learn a lot more, because I'm passionate about
+            technology, and love to be constantly learning something new in this
+            vast and intriguing universe.
+          </p>
+        </article>
       </section>
       <section id="contact">
         <h2 class="subtitle">Get in touch</h2>

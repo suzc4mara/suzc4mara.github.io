@@ -24,17 +24,17 @@ h1 {
   border: var(--secondary-color) solid 1px;
 }
 
-ul {
+.nav-list {
   display: flex;
   gap: 1rem;
 }
 
-ul a {
+.nav-list a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
-ul a::after {
+.nav-list a::after {
   content: "";
   width: 0;
   height: 2px;
@@ -45,7 +45,7 @@ ul a::after {
   transition: width 0.2s linear;
 }
 
-ul a:hover::after {
+.nav-list a:hover::after {
   width: 100%;
 }
 
@@ -90,4 +90,62 @@ ul a:hover::after {
 #theme:checked + .toggler-slider::before {
   transform: translateX(30px);
   background-color: var(--primary-color);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: var(--secondary-color);
+  transition: all 0.3 ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.on span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.on span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.on span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  nav {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }

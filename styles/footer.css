@@ -23,7 +23,13 @@ footer {
   gap: 1rem;
 }
 
+.footer-col-2 ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
 footer li a {
+  text-decoration: none;
   color: var(--primary-color);
   transition: 0.3s;
 }
