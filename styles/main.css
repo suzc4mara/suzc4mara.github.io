@@ -9,6 +9,10 @@ body {
 body.light-theme {
   --primary-color: #f2e7bf;
   --secondary-color: #474a51;
+  --svg-primary: invert(94%) sepia(16%) saturate(624%) hue-rotate(333deg)
+    brightness(103%) contrast(90%);
+  --svg-secondary: invert(29%) sepia(6%) saturate(655%) hue-rotate(184deg)
+    brightness(93%) contrast(92%);
 }
 
 main {
@@ -69,7 +73,15 @@ article {
   margin: 20px auto;
 }
 
+main img {
+  height: 16px;
+  filter: var(--svg-secondary);
+}
+
 .about-social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: var(--secondary-color);
 }

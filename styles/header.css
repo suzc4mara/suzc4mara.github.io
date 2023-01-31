@@ -1,6 +1,10 @@
 :root {
   --primary-color: #474a51;
   --secondary-color: #f2e7bf;
+  --svg-primary: invert(29%) sepia(6%) saturate(655%) hue-rotate(184deg)
+    brightness(93%) contrast(92%);
+  --svg-secondary: invert(94%) sepia(16%) saturate(624%) hue-rotate(333deg)
+    brightness(103%) contrast(90%);
 }
 
 body {

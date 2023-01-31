@@ -28,6 +28,11 @@ footer {
   gap: 0.5rem;
 }
 
+footer img {
+  height: 20px;
+  filter: var(--svg-primary);
+}
+
 footer li a {
   text-decoration: none;
   color: var(--primary-color);
