@@ -50,9 +50,13 @@ q::after {
   bottom: -20px;
 }
 
+#animation {
+  width: 100%;
+  margin-top: 30px;
+}
+
 #animation canvas {
   margin: auto;
-  margin-top: 30px;
 }
 
 .subtitle {
@@ -126,8 +130,4 @@ textarea {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 500px) {
-  canvas {
-    width: 400px;
-  }
 }

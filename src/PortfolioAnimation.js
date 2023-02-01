@@ -27,14 +27,14 @@ export default function PortfolioAnimation() {
   div.appendChild(renderer.domElement);
 
   const geometry = new BoxGeometry(1, 1, 1);
-  const material = new MeshBasicMaterial({ color: "#f2e7bf" });
+  const material = new MeshBasicMaterial({ color: "#474a51" });
   const cube = new Mesh(geometry, material);
 
   scene.add(cube);
 
   // Wireframe
   const geo = new EdgesGeometry(cube.geometry);
-  const mat = new LineBasicMaterial({ color: 0x000000 });
+  const mat = new LineBasicMaterial({ color: "#f2e7bf" });
   const wireframe = new LineSegments(geo, mat);
   cube.add(wireframe);
 
