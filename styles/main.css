@@ -32,6 +32,7 @@ section {
 
 q {
   font-style: italic;
+  font-family: "Poppins", sans-serif;
 }
 
 q::before {
@@ -62,11 +63,18 @@ q::after {
 .subtitle {
   font-size: 2rem;
   margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 article {
   max-width: 500px;
   margin: auto;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .about-social-icons {
@@ -99,6 +107,26 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--secondary-color);
+  opacity: 1; /* Firefox */
+  font-family: "Poppins", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .field {
@@ -117,6 +145,9 @@ textarea {
   width: 300px;
   border-radius: 5px;
   border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: 16px;
+  color: var(--secondary-color);
 }
 
 .submit {
@@ -128,6 +159,4 @@ textarea {
 .submit:hover {
   cursor: pointer;
   opacity: 0.8;
-}
-
 }
