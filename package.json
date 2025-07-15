@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luisc4mara/portfolio.git"
+    "url": "git+https://github.com/suzc4mara/portfolio.git"
   },
-  "author": "Luís Câmara",
+  "author": "Suzannie Câmara",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/luisc4mara/portfolio/issues"
+    "url": "https://github.com/suzc4mara/portfolio/issues"
   },
-  "homepage": "https://github.com/luisc4mara/portfolio#readme",
+  "homepage": "https://github.com/suzc4mara/portfolio#readme",
   "dependencies": {
     "three": "^0.149.0"
   },

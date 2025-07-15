@@ -64,6 +64,13 @@ q::after {
   bottom: -20px;
 }
 
+.h2-quote p{
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  text-align: end;
+}
+
 #animation {
   width: 100%;
   margin-top: 30px;

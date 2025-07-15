@@ -12,6 +12,10 @@ body {
   color: var(--secondary-color);
 }
 
+header{
+  margin-top: .5rem;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -23,8 +27,9 @@ nav {
 
 h1 {
   font-weight: bold;
-  padding: 2px 4px;
+  padding: 5px 10px;
   border: var(--secondary-color) solid 1px;
+  text-align: center;
 }
 
 .nav-list {
