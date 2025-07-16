@@ -128,47 +128,48 @@ nav {
   width: 100%;
 }
 
+/* Toggler mais bonito e verticalizado */
 .toggler {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 20px;
+  width: 40px;
+  height: 24px;
+  vertical-align: middle;
 }
 
 .toggler-slider {
   cursor: pointer;
   background-color: var(--secondary-color);
-  border-radius: 40%;
+  border-radius: 24px;
   position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
-  transition: 0.5s;
+  right: 0;
+  bottom: 0;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .toggler-slider::before {
-  position: absolute;
   content: "";
-  left: 5px;
-  bottom: 5px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
   background-color: var(--primary-color);
-  width: 10px;
-  height: 10px;
   border-radius: 50%;
-  transition: 0.5s;
-}
-
-#theme {
-  display: none;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
 #theme:checked + .toggler-slider {
-  background-color: var(--secondary-color);
-}
-#theme:checked + .toggler-slider::before {
-  transform: translateX(30px);
   background-color: var(--primary-color);
+}
+
+#theme:checked + .toggler-slider::before {
+  transform: translateX(16px);
+  background-color: var(--secondary-color);
 }
 
 .hamburger {
@@ -227,4 +228,21 @@ nav {
     flex-direction: column;
     width: 100%;
   }
+}
+
+/* Toggler cores invertidas no tema claro */
+body.light-theme .toggler-slider {
+  background-color: var(--primary-color);
+}
+
+body.light-theme .toggler-slider::before {
+  background-color: var(--secondary-color);
+}
+
+body.light-theme #theme:checked + .toggler-slider {
+  background-color: var(--secondary-color);
+}
+
+body.light-theme #theme:checked + .toggler-slider::before {
+  background-color: var(--primary-color);
 }
