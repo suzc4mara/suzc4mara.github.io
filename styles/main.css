@@ -1,3 +1,63 @@
+/* Responsividade global */
+@media (max-width: 900px) {
+  main {
+    padding: 0 10px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .subtitle, .h2-quote {
+    font-size: 1.3rem;
+  }
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project img {
+    width: 100%;
+    max-width: 320px;
+  }
+  .about-social-icons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 570px) {
+  main {
+    padding: 0 2px;
+  }
+  section {
+    padding: 18px 0;
+  }
+  .subtitle, .h2-quote {
+    font-size: 1.05rem;
+  }
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+  .about-social-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  form {
+    width: 100%;
+    min-width: 0;
+  }
+  .field input, .field textarea {
+    width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
