@@ -31,13 +31,11 @@ nav {
   padding: 5px 10px;
   border: var(--secondary-color) solid 1px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .nav-list {
   display: flex;
   gap: 1rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .nav-list a {
