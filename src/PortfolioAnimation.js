@@ -40,6 +40,25 @@ export default function PortfolioAnimation() {
 
   camera.position.z = 1.5;
 
+  // Função para atualizar as cores do cubo conforme o tema
+  function updateCubeColors() {
+    const isLight = document.body.classList.contains("light-theme");
+    // Troque as cores conforme o tema
+    material.color.set(isLight ? "#f2e7bf"  : "#474a51");
+    mat.color.set(isLight ? "#474a51" :"#f2e7bf");
+  }
+
+  // Detecta troca de tema
+  const themeToggler = document.getElementById("theme");
+  if (themeToggler) {
+    themeToggler.addEventListener("change", () => {
+      setTimeout(updateCubeColors, 100);
+    });
+  }
+
+  // Atualiza ao carregar
+  updateCubeColors();
+
   function animate() {
     requestAnimationFrame(animate);
 
